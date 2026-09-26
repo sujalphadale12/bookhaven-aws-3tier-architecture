@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookHaven — Discover Your Next Great Read</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#"><span class="brand-mark">B</span><span>BookHaven</span></a>
+  <nav>
+    <a href="#books">Books</a>
+    <a href="#categories">Categories</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="icon-btn" id="searchFocus" aria-label="Search">⌕</button>
+    <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+    <button class="login-btn" id="authBtn">Sign in</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">CURATED FOR CURIOUS MINDS</span>
+    <h1>Stories worth<br><em>turning pages for.</em></h1>
+    <p>Explore thoughtfully selected books across fiction, technology, business and personal growth.</p>
+    <div class="hero-actions">
+      <a class="primary" href="#books">Explore books <span>→</span></a>
+      <a class="secondary" href="#categories">Browse categories</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="book-stack">
+      <div class="book b1"></div><div class="book b2"></div><div class="book b3"></div>
+    </div>
+    <div class="hero-card"><strong>8,000+</strong><span>books waiting<br>to be discovered</span></div>
+  </div>
+</section>
+
+<section class="trust">
+  <span>FREE DELIVERY OVER ₹499</span><span>•</span><span>CURATED TITLES</span><span>•</span><span>SECURE CHECKOUT</span><span>•</span><span>NEW ARRIVALS WEEKLY</span>
+</section>
+
+<section class="section" id="categories">
+  <div class="section-head"><div><span class="eyebrow">EXPLORE</span><h2>Find your next chapter</h2></div></div>
+  <div class="category-grid" id="categoryGrid"></div>
+</section>
+
+<section class="section books-section" id="books">
+  <div class="section-head">
+    <div><span class="eyebrow">THE COLLECTION</span><h2>Popular right now</h2></div>
+    <div class="search-wrap"><span>⌕</span><input id="search" placeholder="Search books or authors..."></div>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="book-grid" id="bookGrid"></div>
+</section>
+
+<section class="quote-section" id="about">
+  <div class="quote-mark">“</div>
+  <blockquote>A room without books is like a body without a soul.</blockquote>
+  <span>— Marcus Tullius Cicero</span>
+</section>
+</main>
+
+<footer>
+  <div class="brand footer-brand"><span class="brand-mark">B</span><span>BookHaven</span></div>
+  <p>Beautiful books. Better ideas.</p>
+  <span>© 2026 BookHaven</span>
+</footer>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-card">
+    <button class="close" id="closeModal">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
